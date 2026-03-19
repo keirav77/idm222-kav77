@@ -27,6 +27,9 @@
   .dark-logo{
     display:none;
   }
+  .som-dark{
+    display: none;
+  }
  
 
 @media (prefers-color-scheme: dark) {
@@ -240,9 +243,9 @@ transition: width 0.4s ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
-   .light-logo{ display: none; 
+   .som-light{ display: none; 
 }
-    .dark-logo {display: block; 
+    .som-dark {display: block; 
     }
     
 }
@@ -336,7 +339,7 @@ body {
     font-family: 'Sora';
     font-weight: var(--font-weight-regular);
    margin: 0;
-   line-height: 1.8;
+   line-height: 2.0;
    background: var(--background);
    color: var(--text-main);
 }
@@ -360,14 +363,14 @@ h2 {
 h3 {
     font-family: 'Sora';
     font-weight:var(--font-weight-semibold);
-    font-size: 1.50rem;
+    font-size: 1.75rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
     padding:0 1.5rem
 }
 p {
     font-weight:var(--font-weight-regular);
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 2.0;
     padding: 0 2rem;
     letter-spacing: 0.10px;
@@ -453,7 +456,7 @@ img {
 .project-card {
     background-color:var(--cards);
     padding: 1.5rem;
-    box-shadow: 0 4px 10px var(--text-shadow);
+    box-shadow: 0 4px 10px var(--info);
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     border-radius:10px;
 }
@@ -595,5 +598,9 @@ a{
         grid-template-columns: 1fr;
     }
 }
-
- 
+.a-10champs {
+    width: 30vw;
+    margin: 0 auto;
+    padding: 0 1rem;
+    align-items: left;
+}
